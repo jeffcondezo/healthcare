@@ -1,0 +1,70 @@
+{% extends "admision/base.html" %}
+{% load static %}
+
+{% block head_files %}
+    <link href="{% static "assets/plugins/select2/dist/css/select2.min.css" %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+    <div id="content" class="content">
+        <!-- begin breadcrumb -->
+        <ol class="breadcrumb pull-right">
+            <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+            <li class="breadcrumb-item"><a href="javascript:;">Page Options</a></li>
+            <li class="breadcrumb-item active">Page with Mega Menu</li>
+        </ol>
+        <!-- end breadcrumb -->
+        <!-- begin page-header -->
+        <h1 class="page-header">Page with Mega Menu <small>header small text goes here...</small></h1>
+        <!-- end page-header -->
+
+        <!-- begin panel -->
+        <div class="panel panel-inverse">
+            <div class="panel-heading">
+                <div class="panel-heading-btn">
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                    <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                </div>
+                <h4 class="panel-title">Paciente:</h4>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <td><label class="form-check-label own_lbl_table">Tipo Documento: </label></td>
+                        <td>
+                            <select class="default-select2 form-control">
+                                <option value="1" selected>DNI</option>
+                                <option value="2">Carne Extranjería</option>
+                                <option value="3">Sin Documento</option>
+                            </select>
+                        </td>
+                        <td><label class="form-check-label own_lbl_table">Documento:</label></td>
+                        <td><input class="form-control" value="70864821"></td>
+                        <td><label class="form-check-label own_lbl_table">Completar:</label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-check-label own_lbl_table">Identificación: </label></td>
+                        <td><input class="form-control" value="70864821"></td>
+                        <td><label class="form-check-label own_lbl_table">Nombres:</label></td>
+                        <td><input class="form-control" value="JEFF CARLOS"></td>
+                        <td><label class="form-check-label own_lbl_table">Apellidos:</label></td>
+                        <td><input class="form-control" value="PEÑA CONDEZO"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- end panel -->
+    </div>
+{% endblock %}
+
+{% block bottom_scripts %}
+    <script src="{% static "assets/plugins/select2/dist/js/select2.min.js" %}"></script>
+    <script src="{% static "assets/plugins/masked-input/masked-input.min.js" %}"></script>
+    <script>
+        $(".default-select2").select2();
+        $("#masked-number").mask("99999999");
+    </script>
+{% endblock %}
