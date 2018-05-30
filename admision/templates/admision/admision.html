@@ -7,15 +7,8 @@
 
 {% block content %}
     <div id="content" class="content">
-        <!-- begin breadcrumb -->
-        <ol class="breadcrumb pull-right">
-            <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-            <li class="breadcrumb-item"><a href="javascript:;">Page Options</a></li>
-            <li class="breadcrumb-item active">Page with Mega Menu</li>
-        </ol>
-        <!-- end breadcrumb -->
         <!-- begin page-header -->
-        <h1 class="page-header">Page with Mega Menu <small>header small text goes here...</small></h1>
+        <h1 class="page-header">Buscar Paciente</h1>
         <!-- end page-header -->
 
         <!-- begin panel -->
@@ -30,30 +23,36 @@
                 <h4 class="panel-title">Paciente:</h4>
             </div>
             <div class="panel-body">
-                <table class="table">
-                    <tr>
-                        <td><label class="form-check-label own_lbl_table">Tipo Documento: </label></td>
-                        <td>
+                <div class="row own_row_admision">
+                    <div class="form-inline">
+                        <div class="form-group m-r-20">
+                            <label class="form-check-label">Tipo Documento: </label>
+                        </div>
+                        <div class="form-group m-r-20">
                             <select class="default-select2 form-control">
-                                <option value="1" selected>DNI</option>
-                                <option value="2">Carne Extranjería</option>
-                                <option value="3">Sin Documento</option>
+                                    <option value="1" selected>DNI</option>
+                                    <option value="2">Carne Extranjería</option>
+                                    <option value="3">Sin Documento</option>
                             </select>
-                        </td>
-                        <td><label class="form-check-label own_lbl_table">Documento:</label></td>
-                        <td><input class="form-control" value="70864821"></td>
-                        <td><label class="form-check-label own_lbl_table">Completar:</label></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><label class="form-check-label own_lbl_table">Identificación: </label></td>
-                        <td><input class="form-control" value="70864821"></td>
-                        <td><label class="form-check-label own_lbl_table">Nombres:</label></td>
-                        <td><input class="form-control" value="JEFF CARLOS"></td>
-                        <td><label class="form-check-label own_lbl_table">Apellidos:</label></td>
-                        <td><input class="form-control" value="PEÑA CONDEZO"></td>
-                    </tr>
-                </table>
+                        </div>
+                        <div class="form-group m-r-20">
+                            <label class="form-check-label">Documento: </label>
+                        </div>
+                        <div class="form-check m-r-20">
+                            <input class="form-control" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr><th>Código</th><th>Nombres</th><th>Apellidos</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>0000-00</td><td>JEFF CARLOS</td><td>PEÑA CONDEZO</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <!-- end panel -->

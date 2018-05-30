@@ -1,3 +1,9 @@
 .own_lbl_table {
     margin-top: 6px;
 }
+.own_admision_td {
+    width: 25%;
+}
+.own_row_admision{
+    padding-left: 20px;
+}
