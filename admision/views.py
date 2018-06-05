@@ -25,3 +25,25 @@ class AdmisionView(FormView):
         # It should return an HttpResponse.
         form.send_email()
         return super().form_valid(form)
+
+
+class Prueba1View(FormView):
+    template_name = 'admision/prueba1.html'
+    form_class = PacienteForm
+
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.send_email()
+        return super().form_valid(form)
+
+
+class Prueba2View(FormView):
+    template_name = 'admision/prueba2.html'
+    form_class = PacienteForm
+
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.send_email()
+        return super().form_valid(form)
