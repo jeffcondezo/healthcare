@@ -21,3 +21,4 @@ function init_busqueda_search() {
         document.getElementById('input_documento').setAttribute('maxlength', limit);
     };
 }
+
